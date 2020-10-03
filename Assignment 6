@@ -1,0 +1,22 @@
+def get_mass():
+  print("Enter mass in grams:")
+  mass = int(input())
+  return mass
+
+
+def calculate_kg(mass):
+  kg = mass / 1000
+  return kg
+
+
+def display_results(kg):
+  print("The mass in kg is: " + str(kg) + " kilograms.")
+
+
+def main():
+  mass = get_mass()
+  kg = calculate_kg(mass)
+  display_results(kg)
+
+
+main()
